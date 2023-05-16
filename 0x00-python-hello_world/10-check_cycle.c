@@ -8,18 +8,20 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *current = list;
-	listint_t *after = list;
+	listint_t *after;
 
 	if (!list)
 		return (0);
-
-	while (current && after && after->next)
+	while (current)
 	{
+		after = current;
+		while (after)
+		{
+			after = after->next;
+			if (current == after)
+				return (1);
+		}
 		current = current->next;
-		after = after->next->next;
-		if (current == after)
-			return (1);
 	}
-
 	return (0);
 }
