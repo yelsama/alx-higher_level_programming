@@ -6,3 +6,4 @@ pyfile = os.environ.get('PYFILE')
 if pyfile:
     compiled_file = pyfile + 'c'
     py_compile.compile(pyfile, compiled_file)
+a
