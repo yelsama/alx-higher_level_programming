@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 This class.
 Attributes:
@@ -17,5 +16,5 @@ class Square:
     Methods:
         None
     """
-    def __init__(self, size = None):
-            self.__size = size
+    def __init__(self, size=None):
+        self.__size = size
