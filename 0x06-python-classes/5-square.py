@@ -5,7 +5,7 @@ Attributes:
     None
 Methods:
     area
-    print
+    my_print
 """
 
 
@@ -16,7 +16,7 @@ class Square:
         None
     Methods:
         area
-        print
+        my_print
     """
     def __init__(self, size=0):
         if not isinstance(size, int):
@@ -41,7 +41,7 @@ class Square:
         return self.size ** 2
 
     def my_print(self):
-        for i in range(self.size):
-            for j in range(self.size):
+        for i in range(self.__size):
+            for j in range(self.__size):
                 print("#", end="")
             print()   
