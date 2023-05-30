@@ -10,13 +10,13 @@ Methods:
 	None
 """
 class Square:
-    """
-This class represents a square shape.
+	"""
+	This class represents a square shape.
 
-Attributes:
-	None
+	Attributes:
+		None
 
-Methods:
-	None
-"""
-    pass
+	Methods:
+		None
+	"""
+	pass
