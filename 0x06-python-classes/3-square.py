@@ -2,9 +2,9 @@
 """
 This class represents a square shape.
 Attributes:
-    area
-Methods:
     None
+Methods:
+    area
 """
 
 
