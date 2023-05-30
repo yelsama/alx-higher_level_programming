@@ -11,10 +11,8 @@ Methods:
 class Square:
     """
     This class represents a square shape.
-
     Attributes:
         None
-
     Methods:
         None
     """
