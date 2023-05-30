@@ -2,5 +2,9 @@
 class Square:
     """
     empty class
+    Attributes:
+    	None
+    Methods:
+		None
     """
     pass
