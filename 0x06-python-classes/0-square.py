@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 class Square:
     """
-    empty class
+    This class represents a square shape.
+
     Attributes:
-    	None
+        None
+
     Methods:
-		None
+        None
     """
     pass
