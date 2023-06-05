@@ -7,6 +7,7 @@ Methods:
     None
 """
 
+
 class Rectangle:
     """
     This class represents a square shape.
