@@ -16,4 +16,6 @@ class Rectangle:
     Methods:
         None
     """
-    def __init__(self, he)
+    def __init__(self, width=0, height=0):
+        self.__height = height
+        self.__width = width
