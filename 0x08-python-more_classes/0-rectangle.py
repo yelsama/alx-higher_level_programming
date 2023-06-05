@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This class represents a square shape.
+This class represents a rectanglar shape.
 Attributes:
     None
 Methods:
@@ -10,7 +10,7 @@ Methods:
 
 class Rectangle:
     """
-    This class represents a square shape.
+    This class represents a rectanglar shape.
     Attributes:
         None
     Methods:
