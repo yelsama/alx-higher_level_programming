@@ -2,7 +2,7 @@
 Rectangle = __import__('1-rectangle').Rectangle
 
 my_rectangle = Rectangle(2, 4)
-type(my_rectangle)
+print(type.my_rectangle)
 # print(my_rectangle.__dict__)
 
 # my_rectangle.width = 10
