@@ -1,21 +1,8 @@
 #!/usr/bin/python3
-"""
-This class represents a rectanglar shape.
-Attributes:
-    None
-Methods:
-    None
-"""
-
+"""define a Rectangle"""
 
 class Rectangle:
-    """
-    This class represents a rectanglar shape.
-    Attributes:
-        None
-    Methods:
-        None
-    """
+    """Rectangle class"""
     def __init__(self, width=0, height=0):
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
@@ -27,7 +14,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = height
         self.__width = width
-
+    
     def width(self):
         return self.width
     
