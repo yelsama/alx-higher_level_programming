@@ -13,6 +13,7 @@ class BaseGeometry():
     def area(self):
         raise Exception("area() is not implemented")
 
+
 class Rectangle(BaseGeometry):
     """first one I write to inherit"""
     def __init__(self, width, height):
