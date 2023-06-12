@@ -3,7 +3,7 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """this to describe this class"""
+    """this to describe this function"""
     if isinstance(obj, a_class):
         return True
     else:
