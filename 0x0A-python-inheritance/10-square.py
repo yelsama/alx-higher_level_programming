@@ -30,6 +30,7 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
+    """this is sub sub"""
     def __init__(self, size):
         self.integer_validator("size", size)
         self.__size = size
