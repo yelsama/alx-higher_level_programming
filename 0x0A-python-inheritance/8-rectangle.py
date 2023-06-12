@@ -2,7 +2,7 @@
 """this is for class"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """a class with one method"""
     def area(self):
         raise Exception("area() is not implemented")
