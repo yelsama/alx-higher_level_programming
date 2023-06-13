@@ -4,7 +4,7 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """search and update"""
-    read = []
+    read = ""
     with open(filename, "r", encoding="utf-8") as f:
         read = f.readline()
         i = 0
