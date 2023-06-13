@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """define a queens"""
-
-
 import sys
+
 
 def is_safe(board, row, col):
     """Check if there is a queen in the same column"""
