@@ -43,6 +43,7 @@ def solve_nqueens(board, row, solutions):
             solve_nqueens(board, row + 1, solutions)
             board[row] = -1
 
+
 def print_solutions(solutions):
     for solution in solutions:
         print([[row, col] for row, col in enumerate(solution)])
