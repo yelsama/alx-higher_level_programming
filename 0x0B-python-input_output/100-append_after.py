@@ -13,5 +13,5 @@ def append_after(filename="", search_string="", new_string=""):
                 read[i:i + 1] = [read[i], new_string]
                 i += 1
             i += 1
-    with open(filename, "w", encoding="utf-8") as fw:
-        fw.writelines(read)
+    with open(filename, "w", encoding="utf-8") as f:
+        f.writelines(read)
