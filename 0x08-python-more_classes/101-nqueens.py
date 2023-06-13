@@ -9,7 +9,8 @@ def is_safe(board, row, col):
         if board[i] == col:
             return False
 
-    """Check if there is a queen in the same diagonal (top-left to bottom-right)"""
+    """Check if there is a queen in the same diagonal
+    (top-left to bottom-right)"""
     i = row - 1
     j = col - 1
     while i >= 0 and j >= 0:
@@ -18,7 +19,8 @@ def is_safe(board, row, col):
         i -= 1
         j -= 1
 
-    """"Check if there is a queen in the same diagonal (top-right to bottom-left)"""
+    """"Check if there is a queen in the same diagonal
+    (top-right to bottom-left)"""
     i = row - 1
     j = col + 1
     while i >= 0 and j < len(board):
@@ -28,6 +30,7 @@ def is_safe(board, row, col):
         j += 1
 
     return True
+
 
 def solve_nqueens(board, row, solutions):
     if row == len(board):
@@ -43,6 +46,7 @@ def solve_nqueens(board, row, solutions):
 def print_solutions(solutions):
     for solution in solutions:
         print([[row, col] for row, col in enumerate(solution)])
+
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
