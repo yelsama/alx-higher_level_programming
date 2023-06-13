@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""'''append_after'''"""
+"""append_after"""
 
 
 def append_after(filename="", search_string="", new_string=""):
-	"""'''search and update'''"""
+	"""search and update"""
 	read = []
 	with open(filename, "r", encoding="utf-8") as f:
 		read = f.readline()
@@ -15,5 +15,5 @@ def append_after(filename="", search_string="", new_string=""):
 				i += 1
 			i += 1
 
-	with open(filename, "w", encoding="utf-8") as f:
-		f.writelines(read)
+	with open(filename, "w", encoding="utf-8") as fw:
+		fw.writelines(read)
