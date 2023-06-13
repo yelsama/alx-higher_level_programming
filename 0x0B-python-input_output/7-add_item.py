@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""work on grouping previous"""
 import sys
 import os
 
