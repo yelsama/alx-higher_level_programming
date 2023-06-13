@@ -2,6 +2,7 @@
 """ Student module
 """
 
+
 class Student:
     """ Student
     """
