@@ -6,7 +6,7 @@ def append_after(filename="", search_string="", new_string=""):
     """search and update"""
     read = ""
     with open(filename, "r", encoding="utf-8") as f:
-        read = f.readline()
+        read = f.readlines()
         i = 0
         while i < len(read):
             if search_string in read[i]:
