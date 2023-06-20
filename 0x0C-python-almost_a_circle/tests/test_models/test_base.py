@@ -18,8 +18,6 @@ class TestBAse(unittest.TestCase):
         b2 = Base(12)
         self.assertEqual(12, b2.id)
 
-    def test_init(self):
-        """check instance"""
-        Base._Base__nb_objects = 0
-        b2 = Base()
-        self.assertIsInstance(b2, Base)
+    def test_type(self):
+        b = Base()
+        self.assertIsInstance(b, Base)
