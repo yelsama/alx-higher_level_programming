@@ -10,3 +10,8 @@ class TestBAse(unittest.TestCase):
         """check id"""
         b1 = Base()
         self.assertIsNotNone(b1.id)
+
+    def test_id2(self):
+        """check id"""
+        b2 = Base(12)
+        self.assertEqual(12, b2.id)
