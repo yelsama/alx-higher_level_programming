@@ -6,6 +6,10 @@ from models.base import Base
 class Rectangle(Base):
     """rectangle class inhrets from base"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        if type(width) is not int or type(height) is not int:
+            raise TypeError()
+        if width < 1 or height < 1:
+            raise ValueError()
         self.__width = width
         self.__height = height
         self.__x = x
