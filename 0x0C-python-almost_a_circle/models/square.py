@@ -13,4 +13,3 @@ class Square(Rectangle):
         """overites the string for rectangle"""
         return "[{}] ({}) {}/{} - {}".format(
             type(self).__name__, self.id, self.x, self.y, self.width)
- 
