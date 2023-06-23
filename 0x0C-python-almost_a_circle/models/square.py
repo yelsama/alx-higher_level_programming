@@ -10,6 +10,7 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
  
     def __str__(self):
-	    return "[{}] ({}) {}/{} - {}".format(
+        """overites the string for rectangle"""
+        return "[{}] ({}) {}/{} - {}".format(
             type(self).__name__, self.id, self.x, self.y, self.width)
  
