@@ -8,7 +8,7 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """Initialize the constructor"""
         super().__init__(size, size, x, y, id)
- 
+
     def __str__(self):
         """overites the string for rectangle"""
         return "[{}] ({}) {}/{} - {}".format(
