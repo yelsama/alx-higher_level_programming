@@ -94,6 +94,7 @@ class Rectangle(Base):
             self.__width, self.__height)
 
     def update(self, *args):
+        """update class variables"""
         for i in range(len(args)):
             if i == 0:
                 self.id = args[0]
