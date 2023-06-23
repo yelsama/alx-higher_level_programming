@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Base class as requested"""
+import json
 
 
 class Base:
@@ -12,3 +13,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """check the name and code"""
+        return json.dumps(list_dictionaries)
