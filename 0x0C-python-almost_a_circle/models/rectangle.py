@@ -87,5 +87,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """this to print the object"""
-        return f"[{type(self).__name__}] ({self.id})\
-{self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return f"[{type(self).__name__}] ({self.id}) 
+    {self.__x}/{self.__y} - {self.__width}/{self.__height}"
