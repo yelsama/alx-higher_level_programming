@@ -89,4 +89,4 @@ class Rectangle(Base):
         """this to print the object"""
         return "[{}] ({}) {}/{} - {}/{}".format(
             type(self).__name__, self.id, self.__x, self.__y,
-                self.__width, self.__height)
+            self.__width, self.__height)
