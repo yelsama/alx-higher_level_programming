@@ -6,10 +6,18 @@ from models.base import Base
 class Rectangle(Base):
     """rectangle class inhrets from base"""
     def __init__(self, width, height, x=0, y=0, id=None):
-        if type(width) is not int or type(height) is not int:
-            raise TypeError()
-        if width < 1 or height < 1:
-            raise ValueError()
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        if width < 1:
+            raise ValueError("width must be > 0")
+        if height < 1:
+            raise ValueError("height must be > 0")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+        if y < 0:
+            raise ValueError("y must be >= 0")
         self.__width = width
         self.__height = height
         self.__x = x
@@ -25,7 +33,7 @@ class Rectangle(Base):
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width < 1:
-            raise ValueError("width must be >= 0")
+            raise ValueError("width must be > 0")
         self.__width = width
 
     @property
@@ -37,7 +45,7 @@ class Rectangle(Base):
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height < 1:
-            raise ValueError("height must be >= 0")
+            raise ValueError("height must be > 0")
         self.__height = height
 
     @property
